@@ -1,16 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "./src/screens/Home";
-import Aeropress from "./src/screens/methods/Aeropress";
-import PourOver from "./src/screens/methods/PourOver";
+import Home from "./screens/Home";
+import Aeropress from "./screens/Aeropress";
+import PourOver from "./screens/PourOver";
 import { TailwindProvider } from "tailwind-rn";
 import utilities from "./tailwind.json";
+import { BACKGROUND_COLOR_LIGHT, TINT_COLOR } from "./constants/style";
 
 const Stack = createNativeStackNavigator();
 const screenOptions = {
   headerBackTitle: "Back",
-  headerStyle: { backgroundColor: "#fafafa" },
-  headerTintColor: "#0c4a6e",
+  headerStyle: { backgroundColor: BACKGROUND_COLOR_LIGHT },
+  headerTintColor: TINT_COLOR,
 };
 
 const options = {
