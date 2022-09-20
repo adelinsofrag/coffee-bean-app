@@ -1,27 +1,41 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./src/screens/Home";
-import AnotherMockScreen from "./src/screens/AnotherMockScreen";
+import Aeropress from "./src/screens/methods/Aeropress";
+import PourOver from "./src/screens/methods/PourOver";
+import { TailwindProvider } from "tailwind-rn";
+import utilities from "./tailwind.json";
 
 const Stack = createNativeStackNavigator();
 const screenOptions = {
-  headerTintColor: "black",
-  headerStyle: { backgroundColor: "white" },
   headerBackTitle: "Back",
-};
-const options = {
-  Home: { title: "Brewing methods" },
-  AnotherMockScreen: { title: "AnotherMockScreen" },
+  headerStyle: { backgroundColor: "#fafafa" },
+  headerTintColor: "#0c4a6e",
 };
 
-function App() {
+const options = {
+  Home: { title: "Happy Brewing" },
+  Aeropress: { title: "Aeropress" },
+  PourOver: { title: "Pour Over" },
+};
+
+const RootNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
         <Stack.Screen name="Home" component={Home} options={options.Home} />
-        <Stack.Screen name="AnotherMockScreen" component={AnotherMockScreen} options={options.AnotherMockScreen} />
+        <Stack.Screen name="Aeropress" component={Aeropress} options={options.Aeropress} />
+        <Stack.Screen name="PourOver" component={PourOver} options={options.PourOver} />
       </Stack.Navigator>
     </NavigationContainer>
+  );
+};
+
+function App() {
+  return (
+    <TailwindProvider utilities={utilities} colorScheme="light">
+      <RootNavigator />
+    </TailwindProvider>
   );
 }
 
