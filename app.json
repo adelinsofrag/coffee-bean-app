@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "coffee-bean-app",
+    "name": "Coffee Bean App",
     "slug": "coffee-bean-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/coffee-beans-2.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/coffee-beans-2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#fafafa"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,12 +18,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "y"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/coffee-beans-2.png",
+        "backgroundColor": "#fafafa"
       }
     },
     "web": {
