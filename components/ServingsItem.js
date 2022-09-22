@@ -10,9 +10,9 @@ const ServingsItem = ({ item, onPress }) => {
   return (
     <TouchableWithoutFeedback key={item.id} onPress={onPress}>
       <View style={[tailwind("w-20 bg-white h-20 items-center self-center justify-center mx-2 rounded-2xl"), shadow]}>
-        <Image source={icons.Logo} style={tailwind("w-10 h-10 self-center")} /> 
+        <Image source={icons.Cup} style={tailwind("w-10 h-10 self-center")} /> 
         <Text style={tailwind("font-medium text-base text-cbprimary-800")} key={item}>
-          {item.title}
+          x{item.title}
         </Text>
       </View>
     </TouchableWithoutFeedback>
