@@ -1,5 +1,6 @@
 import React from "react";
 import Base from "../components/Base";
+import icons from "../constants/icons";
 
 /**
  * @name Aeropress
@@ -11,7 +12,7 @@ import Base from "../components/Base";
 const Aeropress = () => {
   const props = {
     groundCoffee: 16,
-    imageSRC: require("./../assets/icons/aeropress.png"),
+    imageSRC: icons.Aeropress,
     method: "aeropress",
     placeholder: { label: "Recommended 1:12", value: "12" },
     ratio: 10,

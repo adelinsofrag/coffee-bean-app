@@ -75,7 +75,7 @@ const Base = (props) => {
   return (
     <SafeAreaView style={tailwind("bg-zinc-50 h-full")}>
       <View style={tailwind("flex-1 h-auto justify-evenly px-8 py-6")}>
-        <Image source={props.imageSRC} style={tailwind("w-20 h-20 self-center my-2")} />
+        <Image source={props.imageSRC} style={tailwind("w-32 h-32 self-center my-2")} />
         <Values {...valuesProps} />
 
         <View style={tailwind("py-4")}>

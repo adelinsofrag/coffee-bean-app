@@ -37,7 +37,7 @@ const Values = ({ groundCoffee, ratio, water, doseMultiplier, method }) => {
     <TouchableWithoutFeedback onPress={handleShareTouch}>
       <View style={[tailwind("flex-row justify-evenly items-center h-auto bg-white my-4 py-2 rounded-2xl"), shadow]}>
         <View style={tailwind("flex h-auto justify-between items-center")}>
-          <Image source={require("./../assets/icons/grinder.png")} style={tailwind("w-6 h-6 mb-1")} />
+          <Image source={icons.Grinder} style={tailwind("w-6 h-6 mb-1")} />
           <Text style={tailwind(" text-cbprimary-800 font-medium text-xl")}>{groundCoffee * doseMultiplier}g</Text>
         </View>
         <View style={tailwind("flex h-auto justify-between items-center")}>
@@ -45,7 +45,7 @@ const Values = ({ groundCoffee, ratio, water, doseMultiplier, method }) => {
           <Text style={tailwind(" text-cbprimary-800 font-medium text-xl")}>{water * doseMultiplier}ml</Text>
         </View>
         <View style={tailwind("flex h-auto justify-between items-center")}>
-          <Image source={require("./../assets/icons/justice-scale.png")} style={tailwind("w-6 h-6 mb-1")} />
+          <Image source={icons.Ratio} style={tailwind("w-6 h-6 mb-1")} />
           <Text style={tailwind(" text-cbprimary-800 font-medium text-xl")}>1:{ratio}</Text>
         </View>
       </View>

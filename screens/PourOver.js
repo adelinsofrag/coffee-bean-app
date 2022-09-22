@@ -1,5 +1,6 @@
 import React from "react";
 import Base from "../components/Base";
+import icons from "../constants/icons";
 
 /**
  * @name PourOver
@@ -11,7 +12,7 @@ import Base from "../components/Base";
 const PourOver = () => {
   const props = {
     groundCoffee: 17,
-    imageSRC: require("./../assets/icons/dripper.png"),
+    imageSRC: icons.Dripper,
     method: "pourover",
     ratio: 12,
   };

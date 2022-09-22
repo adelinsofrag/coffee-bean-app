@@ -7,12 +7,12 @@ const MethodsContent = [
   {
     id: "Aeropress",
     title: "Aeropress",
-    src: require("./../assets/icons/aeropress.png"),
+    src: icons.Aeropress,
   },
   {
     id: "PourOver",
     title: "Pour Over",
-    src: require("./../assets/icons/dripper.png"),
+    src: icons.Dripper,
   },
 ];
 /**
@@ -112,5 +112,5 @@ export function ratioProvider(method) {
   return res;
 }
 /* ---------------------------------- */
-/*      End of content generatos      */
+/*      End of content generators      */
 /* ---------------------------------- */

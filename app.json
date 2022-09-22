@@ -4,7 +4,7 @@
     "slug": "coffee-bean-app",
     "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icons/aeropress.png",
+    "icon": "./assets/V1.0.1-Logo.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
