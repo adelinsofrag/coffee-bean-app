@@ -5,16 +5,16 @@
 			"marginBottom": 8
 		}
 	},
-	"my-4": {
-		"style": {
-			"marginTop": 16,
-			"marginBottom": 16
-		}
-	},
 	"mx-2": {
 		"style": {
 			"marginLeft": 8,
 			"marginRight": 8
+		}
+	},
+	"my-4": {
+		"style": {
+			"marginTop": 16,
+			"marginBottom": 16
 		}
 	},
 	"mb-1": {
@@ -47,14 +47,14 @@
 			"height": 20
 		}
 	},
-	"h-10": {
-		"style": {
-			"height": 40
-		}
-	},
 	"h-20": {
 		"style": {
 			"height": 80
+		}
+	},
+	"h-10": {
+		"style": {
+			"height": 40
 		}
 	},
 	"h-6": {
@@ -72,24 +72,24 @@
 			"width": "100%"
 		}
 	},
-	"w-10": {
-		"style": {
-			"width": 40
-		}
-	},
-	"w-4/5": {
-		"style": {
-			"width": "80%"
-		}
-	},
 	"w-20": {
 		"style": {
 			"width": 80
 		}
 	},
+	"w-10": {
+		"style": {
+			"width": 40
+		}
+	},
 	"w-6": {
 		"style": {
 			"width": 24
+		}
+	},
+	"w-4/5": {
+		"style": {
+			"width": "80%"
 		}
 	},
 	"flex-1": {
