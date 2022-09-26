@@ -14,55 +14,43 @@ const MethodsContent = [
     title: "Pour Over",
     src: icons.Dripper,
   },
-];
-/**
- * Servings Content
- */
-const ServingsContent = [
   {
-    id: "1",
-    title: "1",
-    src: icons.Default,
+    id: "FrenchPress",
+    title: "French Press",
+    src: icons.FrenchPress,
   },
   {
-    id: "2",
-    title: "2",
-    src: icons.Default,
-  },
-  {
-    id: "3",
-    title: "3",
-    src: icons.Default,
-  },
-  {
-    id: "4",
-    title: "4",
-    src: icons.Default,
-  },
-  {
-    id: "5",
-    title: "5",
-    src: icons.Default,
-  },
-  {
-    id: "6",
-    title: "6",
-    src: icons.Default,
-  },
-  {
-    id: "7",
-    title: "7",
-    src: icons.Default,
+    id: "MokaPot",
+    title: "Moka Pot",
+    src: icons.MokaPot,
   },
 ];
-
-export {
-  MethodsContent,
-  ServingsContent,
-};
+export { MethodsContent };
 /* ---------------------------------- */
 /*         Content generators         */
 /* ---------------------------------- */
+/**
+ * Servings Content
+ * 
+ * {
+ * id: "1",
+ * title: "1",
+ * src: icons.Default,
+ * }
+ */
+export function servingsContent() {
+  let res = [];
+
+  rangeGenerator(1, 5).map((value) =>
+    res.push({
+      id: value,
+      title: value,
+      src: icons.Default,
+    })
+  );
+
+  return res;
+}
 /**
  * Sequence generator function (commonly referred to as "range")
  * Generate numbers range 0..4

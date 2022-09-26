@@ -12,12 +12,12 @@ const Values = ({ groundCoffee, ratio, water, doseMultiplier, method }) => {
   const handleShareTouch = async () => {
     try {
       const result = await Share.share({
-        message: `
-        Base: ${method} 
-        Coffee: ${groundCoffee * doseMultiplier}g
-        Water: ${water * doseMultiplier}ml
-        Ratio: 1:${ratio}
-        For: ${doseMultiplier} cup(s)`,
+        message: `Try this one:
+        - Brewing Method: ${method} 
+        - Coffee: ${groundCoffee * doseMultiplier}g
+        - Water: ${water * doseMultiplier}ml
+        - Ratio: 1:${ratio}
+        - For: ${doseMultiplier} cup(s)`,
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {

@@ -6,7 +6,7 @@ import RatioPicker from "./RatioPicker";
 import ServingsItem from "./ServingsItem";
 import Social from "./Social";
 import Values from "./Values";
-import { ServingsContent } from "./../constants/content";
+import { servingsContent, ServingsContent } from "./../constants/content";
 
 /**
  * 
@@ -99,7 +99,7 @@ const Base = (props) => {
           <Text style={tailwind("font-medium text-cbprimary-800 text-center text-base my-2")}>Select how many cups</Text>
           <FlatList
             style={tailwind("py-2")}
-            data={ServingsContent}
+            data={servingsContent()}
             horizontal={true}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => <ServingsItem item={item} onPress={() => setDoseMultiplier(item.id)} />}
