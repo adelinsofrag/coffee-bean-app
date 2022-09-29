@@ -1,14 +1,16 @@
-const version = `v1.1.0`;
+const prefixVersion = `v1.1.0`;
+const suffixVersion = `2909`;
+const path = `./../assets/icons/`;
 
-const Aeropress = require(`./../assets/icons/${version}_Aeropress.png`);
-const Cup = require(`./../assets/icons/${version}_Cup.png`);
-const Dripper = require(`./../assets/icons/${version}_Dripper.png`);
-const FrenchPress = require(`./../assets/icons/${version}_French_Press.png`);
-const Grinder = require(`./../assets/icons/${version}_Grinder.png`);
-const Logo = require(`./../assets/${version}_Logo.png`);
-const MokaPot = require(`./../assets/icons/${version}_Moka_Pot_Express.png`);
-const Ratio = require(`./../assets/icons/${version}_Ratio.png`);
-const Water = require(`./../assets/icons/${version}_Water_Kettle.png`);
+const Aeropress = require(`${path}${prefixVersion}_Aeropress_${suffixVersion}.png`);
+const Cup = require(`${path}${prefixVersion}_Cup_${suffixVersion}.png`);
+const Dripper = require(`${path}${prefixVersion}_Dripper_${suffixVersion}.png`);
+const FrenchPress = require(`${path}${prefixVersion}_French_Press_${suffixVersion}.png`);
+const Grinder = require(`${path}${prefixVersion}_Grinder_${suffixVersion}.png`);
+const Logo = require(`${path}${prefixVersion}_Logo_${suffixVersion}.png`);
+const MokaPot = require(`${path}${prefixVersion}_Moka_Pot_Express_${suffixVersion}.png`);
+const Ratio = require(`${path}${prefixVersion}_Ratio_${suffixVersion}.png`);
+const Water = require(`${path}${prefixVersion}_Water_Kettle_${suffixVersion}.png`);
 
 export default {
   Aeropress,

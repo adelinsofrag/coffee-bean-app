@@ -10,11 +10,6 @@ const MethodsContent = [
     src: icons.Aeropress,
   },
   {
-    id: "PourOver",
-    title: "Pour Over",
-    src: icons.Dripper,
-  },
-  {
     id: "FrenchPress",
     title: "French Press",
     src: icons.FrenchPress,
@@ -24,6 +19,11 @@ const MethodsContent = [
     title: "Moka Pot",
     src: icons.MokaPot,
   },
+  {
+    id: "PourOver",
+    title: "Pour Over",
+    src: icons.Dripper,
+  },
 ];
 export { MethodsContent };
 /* ---------------------------------- */
@@ -31,17 +31,16 @@ export { MethodsContent };
 /* ---------------------------------- */
 /**
  * Servings Content
- * 
+ *
  * {
  * id: "1",
  * title: "1",
  * src: icons.Default,
  * }
  */
-export function servingsContent() {
+export function servingsContent(from = 1, to = 5) {
   let res = [];
-
-  rangeGenerator(1, 5).map((value) =>
+  rangeGenerator(from, to).map((value) =>
     res.push({
       id: value,
       title: value,
@@ -95,7 +94,12 @@ export function ratioProvider(method) {
       break;
   }
 
-  rangeGenerator(from, to).map((value) => res.push({ label: `1:${value}`, value }));
+  rangeGenerator(from, to).map((value) =>
+    res.push({
+      label: `1:${value}`,
+      value,
+    })
+  );
 
   return res;
 }
