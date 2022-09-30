@@ -1,13 +1,13 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { TailwindProvider } from "tailwind-rn";
+import utilities from "./tailwind.json";
+import { BACKGROUND_COLOR_LIGHT, TINT_COLOR } from "./constants/style";
 import Home from "./screens/Home";
 import Aeropress from "./screens/Aeropress";
 import FrenchPress from "./screens/FrenchPress";
 import MokaPot from "./screens/MokaPot";
 import PourOver from "./screens/PourOver";
-import { TailwindProvider } from "tailwind-rn";
-import utilities from "./tailwind.json";
-import { BACKGROUND_COLOR_LIGHT, TINT_COLOR } from "./constants/style";
 
 const Stack = createNativeStackNavigator();
 const screenOptions = {

@@ -73,8 +73,16 @@
   width: 5rem
 }
 
+.w-auto {
+  width: auto
+}
+
 .w-8 {
   width: 2rem
+}
+
+.w-4 {
+  width: 1rem
 }
 
 .w-12 {

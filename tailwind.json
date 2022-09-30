@@ -92,9 +92,19 @@
 			"width": 80
 		}
 	},
+	"w-auto": {
+		"style": {
+			"width": "auto"
+		}
+	},
 	"w-8": {
 		"style": {
 			"width": 32
+		}
+	},
+	"w-4": {
+		"style": {
+			"width": 16
 		}
 	},
 	"w-12": {

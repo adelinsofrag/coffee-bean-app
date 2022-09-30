@@ -1,12 +1,12 @@
 import React, { useRef, useState } from "react";
 import { useTailwind } from "tailwind-rn";
 import { View, Image, SafeAreaView, TouchableWithoutFeedback, FlatList, Text } from "react-native";
+import { servingsContent } from "./../constants/content";
 import CoffeeInput from "./CoffeeInput";
 import RatioPicker from "./RatioPicker";
 import ServingsItem from "./ServingsItem";
 import Social from "./Social";
 import Values from "./Values";
-import { servingsContent, ServingsContent } from "./../constants/content";
 
 /**
  * 

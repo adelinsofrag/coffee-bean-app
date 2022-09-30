@@ -8,7 +8,7 @@ const Social = () => {
 
   return (
     <View style={tailwind("flex items-center justify-center h-auto")}>
-      <Image source={icons.Logo} style={tailwind("w-20 h-20 self-center")} />
+      <Image source={icons.Logo} style={tailwind("w-12 h-12 self-center")} />
     </View>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import { FlatList, SafeAreaView, View } from "react-native";
-import HomeItem from "../components/HomeItem";
-import Social from "../components/Social";
 import { useTailwind } from "tailwind-rn";
 import { MethodsContent } from "../constants/content";
+import HomeItem from "../components/HomeItem";
+import Social from "../components/Social";
 
 const Home = ({ navigation }) => {
   const tailwind = useTailwind();
