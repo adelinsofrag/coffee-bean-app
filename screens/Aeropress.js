@@ -14,7 +14,7 @@ const Aeropress = () => {
     groundCoffee: 16,
     imageSRC: icons.Aeropress,
     method: "aeropress",
-    placeholder: { label: "Recommended 1:12", value: "12" },
+    placeholder: { label: "Recommended 1:10", value: "10" },
     ratio: 10,
   };
 

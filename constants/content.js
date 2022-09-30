@@ -80,13 +80,25 @@ export function ratioProvider(method) {
   let from, to;
 
   switch (method) {
+    // 100g / 1L > 1:10
     case "aeropress":
       from = 9;
-      to = 16;
+      to = 15;
       break;
+    // 75g / 1L > 1:13
+    case "frenchpress":
+      from = 12;
+      to = 18;
+      break;
+    // 200g / 1L > 1:5
+    case "moka":
+      from = 6;
+      to = 10;
+      break;
+    // 60g / 1L > 1:16
     case "pourover":
-      from = 10;
-      to = 17;
+      from = 13;
+      to = 18;
       break;
     default:
       from = 10;

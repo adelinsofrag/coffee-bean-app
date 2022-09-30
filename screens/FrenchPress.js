@@ -14,8 +14,8 @@ const FrenchPress = () => {
     groundCoffee: 16,
     imageSRC: icons.FrenchPress,
     method: "frenchpress",
-    placeholder: { label: "Recommended 1:12", value: "12" },
-    ratio: 10,
+    placeholder: { label: "Recommended 1:13", value: "13" },
+    ratio: 13,
   };
 
   return <Base {...props} />;

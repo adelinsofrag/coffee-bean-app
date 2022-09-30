@@ -14,7 +14,8 @@ const PourOver = () => {
     groundCoffee: 17,
     imageSRC: icons.Dripper,
     method: "pourover",
-    ratio: 12,
+    placeholder: { label: "Recommended 1:16", value: "16" },
+    ratio: 16,
   };
 
   return <Base {...props} />;

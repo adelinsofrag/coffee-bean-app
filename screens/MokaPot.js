@@ -13,9 +13,9 @@ const MokaPot = () => {
   const props = {
     groundCoffee: 16,
     imageSRC: icons.MokaPot,
-    method: "mokapot",
-    placeholder: { label: "Recommended 1:12", value: "12" },
-    ratio: 10,
+    method: "moka",
+    placeholder: { label: "Recommended 1:6", value: "6" },
+    ratio: 6,
   };
 
   return <Base {...props} />;
