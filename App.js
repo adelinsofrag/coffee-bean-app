@@ -22,7 +22,7 @@ const options = {
   PourOver: { title: "Pour Over" },
 };
 
-const RootNavigator = () => {
+function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
@@ -34,10 +34,6 @@ const RootNavigator = () => {
       </Stack.Navigator>
     </NavigationContainer>
   );
-};
-
-function App() {
-  return <RootNavigator />;
 }
 
 export default App;
