@@ -1,23 +1,19 @@
 import React, { forwardRef } from "react";
 import { View, Text, TextInput } from "react-native";
-import { useTailwind } from "tailwind-rn";
-import { shadow } from "../constants/style";
 
 const CoffeeInput = forwardRef((props, ref) => {
-  const tailwind = useTailwind();
-
   return (
-    <View style={[tailwind("bg-white justify-around p-4 rounded-2xl"), shadow]}>
-      <View style={tailwind("flex-row justify-between")}>
-        <Text style={tailwind("font-medium text-xl text-cbprimary-800")}>Coffee</Text>
-        <View style={tailwind("flex-row")}>
+    <View className="bg-white justify-around p-4 rounded-2xl shadow">
+      <View className="flex-row justify-between">
+        <Text className="font-medium text-xl text-cbprimary-800">Coffee</Text>
+        <View className="flex-row">
           <TextInput
             onChangeText={(value) => {
               value = value.toString().replace(",", ".");
               props.setGroundCoffee(value);
               props.setWater((value * props.ratio).toFixed(0));
             }}
-            style={tailwind("flex self-start text-base font-medium text-cbprimary-800")}
+            className="flex self-start text-base font-medium text-cbprimary-800"
             ref={ref}
             returnKeyType="done"
             placeholder={props.groundCoffee.toString()}
@@ -26,7 +22,7 @@ const CoffeeInput = forwardRef((props, ref) => {
             numeric
             keyboardType={"number-pad"}
           />
-          <Text style={tailwind("font-medium text-base self-end text-cbprimary-800")}>g</Text>
+          <Text className="font-medium text-base self-end text-cbprimary-800">g</Text>
         </View>
       </View>
     </View>

@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { useTailwind } from "tailwind-rn";
 import { View, Image, SafeAreaView, TouchableWithoutFeedback, FlatList, Text } from "react-native";
 import { servingsContent } from "./../constants/content";
 import CoffeeInput from "./CoffeeInput";
@@ -16,12 +15,11 @@ import Values from "./Values";
  * Base component for every method screen
  * @example screens/Aeropress.js 
 
- * - has Tailwind
+ * - has NativeWind
  * - defines default values
  * - contains all the base structure
  */
 const Base = (props) => {
-  const tailwind = useTailwind();
   const placeholder = props.placeholder || { label: "Recommended 1:10", value: "10" };
 
   /* ---------- // Multiplier --------- */
@@ -73,32 +71,32 @@ const Base = (props) => {
   };
 
   return (
-    <SafeAreaView style={tailwind("bg-zinc-50 h-full")}>
-      <View style={tailwind("flex-1 h-auto justify-evenly px-8 py-6")}>
-        <Image source={props.imageSRC} style={tailwind("w-32 h-32 self-center my-2")} />
+    <SafeAreaView className="bg-zinc-50 h-full">
+      <View className="flex-1 h-auto justify-evenly px-8 py-6">
+        <Image source={props.imageSRC} className="w-32 h-32 self-center my-2" />
         <Values {...valuesProps} />
 
-        <View style={tailwind("py-4")}>
-          <Text style={tailwind("font-medium text-cbprimary-800 text-center text-base my-2")}>Tap to change dose</Text>
+        <View className="py-4">
+          <Text className="font-medium text-cbprimary-800 text-center text-base my-2">Tap to change dose</Text>
           <TouchableWithoutFeedback key="coffee" onPress={handleCoffeeTouch}>
-            <View style={tailwind("w-full")}>
+            <View className="w-full">
               <CoffeeInput {...coffeeProps} />
             </View>
           </TouchableWithoutFeedback>
 
-          <View style={tailwind("h-5")} />
+          <View className="h-5" />
 
           <TouchableWithoutFeedback key="ratio" onPress={handleRatioTouch}>
-            <View style={tailwind("w-full")}>
+            <View className="w-full">
               <RatioPicker {...ratioProps} />
             </View>
           </TouchableWithoutFeedback>
         </View>
 
-        <View style={tailwind("py-4")}>
-          <Text style={tailwind("font-medium text-cbprimary-800 text-center text-base my-2")}>Select how many cups</Text>
+        <View className="py-4">
+          <Text className="font-medium text-cbprimary-800 text-center text-base my-2">Select how many cups</Text>
           <FlatList
-            style={tailwind("py-2")}
+            className="py-2"
             data={servingsContent()}
             horizontal={true}
             keyExtractor={(item) => item.id}

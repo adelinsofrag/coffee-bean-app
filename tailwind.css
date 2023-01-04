@@ -45,12 +45,12 @@
   height: 5rem
 }
 
-.h-8 {
-  height: 2rem
-}
-
 .h-12 {
   height: 3rem
+}
+
+.h-8 {
+  height: 2rem
 }
 
 .w-32 {
@@ -73,20 +73,12 @@
   width: 5rem
 }
 
-.w-auto {
-  width: auto
+.w-12 {
+  width: 3rem
 }
 
 .w-8 {
   width: 2rem
-}
-
-.w-4 {
-  width: 1rem
-}
-
-.w-12 {
-  width: 3rem
 }
 
 .flex-1 {
@@ -143,8 +135,31 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity))
+}
+
+.bg-zinc-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 113 122 / var(--tw-bg-opacity))
+}
+
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity))
+}
+
 .p-4 {
   padding: 1rem
+}
+
+.p-3 {
+  padding: 0.75rem
+}
+
+.p-5 {
+  padding: 1.25rem
 }
 
 .px-8 {

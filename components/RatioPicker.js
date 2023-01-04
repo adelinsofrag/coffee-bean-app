@@ -1,17 +1,13 @@
 import React, { forwardRef } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import RNPickerSelect from "react-native-picker-select";
-import { useTailwind } from "tailwind-rn";
 import { ratioProvider } from "./../constants/content";
-import { shadow } from "./../constants/style";
 
 const RatioPicker = forwardRef((props, ref) => {
-  const tailwind = useTailwind();
-
   return (
-    <View style={[tailwind("bg-white justify-around p-4 rounded-2xl"), shadow]}>
-      <View style={tailwind("flex-row justify-between")}>
-        <Text style={tailwind("font-medium text-xl text-cbprimary-800")}>Ratio</Text>
+    <View className="bg-white justify-around p-4 rounded-2xl shadow">
+      <View className="flex-row justify-between">
+        <Text className="font-medium text-xl text-cbprimary-800">Ratio</Text>
         <RNPickerSelect
           ref={ref}
           onValueChange={(value) => {

@@ -1,6 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { TailwindProvider } from "tailwind-rn";
 import utilities from "./tailwind.json";
 import { BACKGROUND_COLOR_LIGHT, TINT_COLOR } from "./constants/style";
 import Home from "./screens/Home";
@@ -40,9 +39,7 @@ const RootNavigator = () => {
 
 function App() {
   return (
-    <TailwindProvider utilities={utilities} colorScheme="light">
       <RootNavigator />
-    </TailwindProvider>
   );
 }
 
