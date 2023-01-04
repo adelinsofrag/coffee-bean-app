@@ -26,19 +26,19 @@ A lightweight coffee brewing calculator.
 
 - [x] [Implement] Share
 - [x] [Redesign] From placeholder and simple texts into some other fancy version
-- [ ] [Cleanup] Move specific style tailwind
-- [ ] [Create] Icons / Images
-- [ ] [Compatibility] Check different versions of iPhones and Android phones and fix were needed.
+- [x] [Cleanup] Move specific style tailwind
+- [x] [Create] Icons / Images
+- [x] [Compatibility] Check different versions of iPhones and Android phones and fix were needed.
 - [x] [Implement] Follow us mockup
 
 ## Phase 4 - Cleanup and refactoring
 
-- [ ] [Refine] As much as possible the current structure
-- [ ] [Implement] Follow us for real
-- [ ] [Feedback] Items
+- [x] [Refine] As much as possible the current structure
 
 ## Nice to have
 
+- [X] [Migrate] To NativeWind
+- [ ] [Implement] Follow us for real
+- [ ] [Feedback] Items
 - [ ] [Implement] Timer for recipes
   - A simple timer somewhere so you can check the brewing time left
-  - Push notifications for long time brewing recipes
